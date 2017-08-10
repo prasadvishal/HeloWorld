@@ -1,0 +1,30 @@
+﻿body 
+{
+    
+}
+.lbl
+{
+    
+    font-family:Algerian;
+    color:#0000ff;
+    
+}
+.h1
+{
+    border-color:#FF0066;
+    border-style:Solid;
+    font-style:inherit;
+    font-Size:Larger;
+    color: #0000ff;
+    background-color:#ffffcc; 
+}
+.table
+{
+    width:50%;
+    background-color:#ff9999;
+}
+.td
+{
+    background-color:#ffffcc;
+ 
+}

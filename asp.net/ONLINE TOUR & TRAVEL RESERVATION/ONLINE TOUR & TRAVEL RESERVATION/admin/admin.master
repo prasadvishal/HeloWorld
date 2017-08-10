@@ -1,0 +1,68 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tr align="center">
+                <td style="width:15%; height:70px">
+                    <asp:Image ID="Image1" runat="server" Height="132px" ImageUrl="~/IMAGES/PH01046J.JPG"
+                        Width="165px" />
+                </td>
+                 <td style="width:65%">
+                     <asp:Image ID="Image5" runat="server" Width="100%" Height="197px" ImageUrl="~/IMAGES/header1 (3).jpg" />
+                     </td>
+                  <td style="width:20%">   
+                     <asp:Image ID="Image6" runat="server" Width="100%" Height="197px"
+                         ImageUrl="~/IMAGES/bus1.jpg"/>
+            
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 24px; background-color: #ff9900">
+                    <asp:Menu ID="Menu2" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2"
+                        Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" OnMenuItemClick="Menu2_MenuItemClick"
+                        Orientation="Horizontal" StaticSubMenuIndent="10px">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/admin/BookingCancellation.aspx" Text="BOOKING CANCELLATION" Value="MAPPACKAGES">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/admin/DeleteRegistration.aspx" Text="DELETE REGISRATION"
+                                Value="DELETE REGISRATION"></asp:MenuItem>
+                            <asp:MenuItem Text="LOGOUT" Value="LOGOUT"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 283px" valign="top" align="left">
+                                <asp:Label ID="Label2" runat="server" BackColor="#80FFFF" BorderColor="Black" Font-Bold="True"
+                                    Font-Size="Medium" ForeColor="Blue" Height="20px" Style="font-size: 10pt; color: #0033ff;
+                                    font-style: italic" Text="ADVERTISEMENT" Width="1px"></asp:Label>
+                    <asp:Image ID="Image3" runat="server" Height="139px" ImageUrl="~/IMAGES/gr_winpromo4.jpg"
+                        Width="116px" />
+                    <asp:Image ID="Image4" runat="server" Height="82px" ImageUrl="~/IMAGES/amazing-andaman2.gif"
+                        Width="114px" /></td>
+                <td colspan="2" style="height: 283px" valign="top">
+                    &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        &nbsp;</asp:ContentPlaceHolder>
+                    </td>
+            </tr>
+            
+        </table>
+       </div>
+    </form>
+</body>
+</html>
